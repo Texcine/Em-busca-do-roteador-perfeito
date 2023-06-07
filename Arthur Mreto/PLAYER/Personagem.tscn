@@ -12,6 +12,7 @@
 [ext_resource path="res://Arthur Mreto/PLAYER/WALK/Tiuzin do TI6.png" type="Texture" id=10]
 
 
+
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ) ],
