@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite-0001.png-815a157a58e3b600af3cd85c2ccba599.stex"
+path="res://.import/minishop&callbox_pale.png-5947249d39a9f92078abe05b479ba7fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arthur Mreto/PLAYER/IDLE/Sprite-0001.png"
-dest_files=[ "res://.import/Sprite-0001.png-815a157a58e3b600af3cd85c2ccba599.stex" ]
+source_file="res://matzyn 244 do gral fila da puta/imagens/City2/Pale/minishop&callbox_pale.png"
+dest_files=[ "res://.import/minishop&callbox_pale.png-5947249d39a9f92078abe05b479ba7fe.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
