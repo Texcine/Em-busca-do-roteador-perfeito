@@ -23,6 +23,9 @@ func _physics_process(delta):
 
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
-			motion.y = -300
+			motion.y = -325
 	else:
 		motion.y = motion.y + gravity
+	if get_slide_count() > 0:
+		if get_slide_collision(0).collider.name == "void":
+			get_tree().change_scene("res://Arthur Cardinali/fase teste.tscn")
