@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://matzyn 244 do gral fila da puta/imagens/City2/Bright/City2.png" type="Texture" id=1]
 [ext_resource path="res://Arthur Mreto/CHÃO/Terrain (16x16).png" type="Texture" id=2]
@@ -6,9 +6,17 @@
 [ext_resource path="res://matzyn 244 do gral fila da puta/imagens/City2/Bright/houses1.png" type="Texture" id=4]
 [ext_resource path="res://matzyn 244 do gral fila da puta/imagens/City2/Pale/Houses3_pale.png" type="Texture" id=5]
 [ext_resource path="res://matzyn 244 do gral fila da puta/imagens/City2/Pale/minishop&callbox_pale.png" type="Texture" id=6]
+[ext_resource path="res://matzyn 244 do gral fila da puta/imagens/fundo-fotogr_fico-em-tecido-muslin-30x60m-preto-3.jpg" type="Texture" id=7]
+[ext_resource path="res://Arthur Mreto/PLAYER/IDLE/Sprite-0002.png" type="Texture" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 49, 9, 0, 9, 0, 0, 49, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 47, 8, 0.605103, 8, 0.605103, 0.326019, 47, 0.326019 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 47, 0, 47, 7, 0, 7 )
 
 [sub_resource type="TileSet" id=2]
 0/name = "Terrain (16x16).png 0"
@@ -32,6 +40,76 @@ points = PoolVector2Array( 49, 9, 0, 9, 0, 0, 49, 0 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
+1/name = "Terrain (16x16).png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 92, 5, 0, 0 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Terrain (16x16).png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 9, 8, 23, 25 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Terrain (16x16).png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 47, 8 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 5 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Terrain (16x16).png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 40, 47, 7 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 6 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 276.5, 17.25 )
@@ -40,17 +118,34 @@ extents = Vector2( 276.5, 17.25 )
 extents = Vector2( 7037.24, 213.316 )
 
 [node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -262139, 536870912, 0 )
+tile_data = PoolIntArray( -262139, 536870912, 0, 3866627, 3, 0, 3866628, 3, 0, 3866629, 3, 0, 3866630, 3, 0, 3866631, 3, 0, 3866632, 3, 0, 3866633, 3, 0, 3866634, 3, 0, 3866635, 3, 0, 3866636, 3, 0, 3866637, 3, 0, 3866638, 3, 0, 3866639, 3, 0, 3866640, 3, 0, 3866641, 3, 0, 3866642, 3, 0, 3866643, 3, 0, 3866644, 3, 0, 3866645, 3, 0, 3866646, 3, 0, 3866647, 3, 0, 3866648, 3, 0, 3866649, 3, 0, 3866650, 3, 0, 3866651, 3, 0, 3866652, 3, 0, 3866653, 3, 0, 3866654, 3, 0, 3866655, 3, 0, 3866656, 3, 0, 3866657, 3, 0, 3866658, 3, 0, 3866659, 3, 0, 3866660, 3, 0, 3866661, 3, 0, 3866662, 3, 0, 3866663, 3, 0, 3866664, 3, 0, 3866665, 3, 0, 3866666, 3, 0, 3866667, 3, 0, 3866668, 3, 0, 3866669, 3, 0, 3866670, 3, 0, 3866671, 3, 0, 3866672, 3, 0, 3866673, 3, 0, 3866674, 3, 0, 3866675, 3, 0, 3866676, 3, 0, 3866679, 3, 0, 3866680, 3, 0, 3866681, 3, 0, 3866682, 3, 0, 3866683, 3, 0, 3866684, 3, 0, 3866685, 3, 0, 3866686, 3, 0, 3866687, 3, 0, 3866688, 3, 0, 3866689, 3, 0, 3866690, 3, 0, 3866691, 3, 0, 3866692, 3, 0, 3866693, 3, 0, 3866694, 3, 0, 3866695, 3, 0, 3866696, 3, 0, 3866697, 3, 0, 3866698, 3, 0, 3866699, 3, 0, 3866700, 3, 0, 3866701, 3, 0, 3866702, 3, 0, 3866703, 3, 0, 3866704, 3, 0, 3866705, 3, 0, 3866706, 3, 0, 3866707, 3, 0, 3866708, 3, 0, 3866709, 3, 0, 3866710, 3, 0, 3866713, 3, 0, 3866714, 3, 0, 3866715, 3, 0, 3866716, 3, 0, 3866717, 3, 0, 3866718, 3, 0, 3866719, 3, 0, 3866720, 3, 0, 3866721, 3, 0, 4259843, 3, 0, 4259844, 3, 0, 4259845, 3, 0, 4259846, 3, 0, 4259847, 3, 0, 4259848, 3, 0, 4259849, 3, 0, 4259850, 3, 0, 4259851, 3, 0, 4259852, 3, 0, 4259853, 3, 0, 4259854, 3, 0, 4259855, 3, 0, 4259856, 3, 0, 4259857, 3, 0, 4259858, 3, 0, 4259859, 3, 0, 4259862, 3, 0, 4259865, 3, 0, 4259866, 3, 0, 4259867, 3, 0, 4259868, 3, 0, 4259869, 3, 0, 4259870, 3, 0, 4259871, 3, 0, 4259872, 3, 0, 4259873, 3, 0, 4259874, 3, 0, 4259877, 3, 0, 4259878, 3, 0, 4259879, 3, 0, 4259880, 3, 0, 4259881, 3, 0, 4259882, 3, 0, 4259883, 3, 0, 4259884, 3, 0, 4259885, 3, 0, 4259886, 3, 0, 4259887, 3, 0, 4259888, 3, 0, 4259889, 3, 0, 4259890, 3, 0, 4259891, 3, 0, 4259892, 3, 0, 4259893, 3, 0, 4259894, 3, 0, 4259895, 3, 0, 4259896, 3, 0, 4259897, 3, 0, 4259898, 3, 0, 4259899, 3, 0, 4259900, 3, 0, 4259901, 3, 0, 4259902, 3, 0, 4259903, 3, 0, 4259904, 3, 0, 4259905, 3, 0, 4259906, 3, 0, 4259907, 3, 0, 4259908, 3, 0, 4259909, 3, 0, 4259910, 3, 0, 4259911, 3, 0, 4259912, 3, 0, 4259913, 3, 0, 4259914, 3, 0, 4259915, 3, 0, 4259916, 3, 0, 4259917, 3, 0, 4259918, 3, 0, 4259919, 3, 0, 4259920, 3, 0, 4259921, 3, 0, 4259922, 3, 0, 4259923, 3, 0, 4259926, 3, 0, 4259927, 3, 0, 4259928, 3, 0, 4259929, 3, 0, 4259930, 3, 0, 4259931, 3, 0, 4259932, 3, 0, 4259933, 3, 0, 4259934, 3, 0, 4259935, 3, 0, 4259936, 3, 0, 4259939, 3, 0 )
 
 [node name="City2" type="Sprite" parent="TileMap"]
 position = Vector2( -244, -42 )
 scale = Vector2( 0.195833, 0.187037 )
 texture = ExtResource( 1 )
+
+[node name="Sprite-0002" type="Sprite" parent="TileMap/City2"]
+position = Vector2( -862.98, 53.4653 )
+texture = ExtResource( 8 )
+
+[node name="Sprite-0003" type="Sprite" parent="TileMap/City2"]
+position = Vector2( -2297.88, 4496.44 )
+texture = ExtResource( 8 )
+
+[node name="Fundo-fotogrFico-em-tecido-muslin-30X60m-preto-3" type="Sprite" parent="TileMap"]
+position = Vector2( 822.5, 1085 )
+scale = Vector2( 1.95125, 1 )
+z_index = -1
+texture = ExtResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -64,7 +159,7 @@ scale = Vector2( 0.365397, 0.288426 )
 texture = ExtResource( 3 )
 
 [node name="Houses1" type="Sprite" parent="."]
-position = Vector2( -700, 767 )
+position = Vector2( -716, 774 )
 scale = Vector2( 0.231771, 0.278704 )
 texture = ExtResource( 4 )
 
