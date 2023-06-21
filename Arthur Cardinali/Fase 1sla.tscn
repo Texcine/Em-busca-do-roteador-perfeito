@@ -1,0 +1,197 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Arthur Mreto/PLAYER/Personagem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Arthur Mreto/CHÃO/Terrain (16x16).png" type="Texture" id=2]
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=1]
+0/name = "Terrain (16x16).png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 96, 0, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 3 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Terrain (16x16).png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 112, 0, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 4 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Terrain (16x16).png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 112, 0, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Terrain (16x16).png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 128, 0, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 5 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Terrain (16x16).png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 96, 16, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Terrain (16x16).png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 112, 16, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Terrain (16x16).png 6"
+6/texture = ExtResource( 2 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 128, 16, 16, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Terrain (16x16).png 7"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 128, 32, 16, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Terrain (16x16).png 8"
+8/texture = ExtResource( 2 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 112, 32, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Terrain (16x16).png 9"
+9/texture = ExtResource( 2 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 96, 32, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 745.75, 1.75 )
+
+[node name="Fase 1" type="Node2D"]
+
+[node name="Chão" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 2031637, 0, 0, 2031638, 2, 0, 2031639, 2, 0, 2031640, 2, 0, 2031641, 2, 0, 2031642, 3, 0, 2097173, 4, 0, 2097174, 5, 0, 2097175, 5, 0, 2097176, 5, 0, 2097177, 5, 0, 2097178, 6, 0, 2162703, 0, 0, 2162704, 2, 0, 2162705, 2, 0, 2162706, 3, 0, 2162709, 4, 0, 2162710, 5, 0, 2162711, 5, 0, 2162712, 5, 0, 2162713, 5, 0, 2162714, 6, 0, 2228239, 4, 0, 2228240, 5, 0, 2228241, 5, 0, 2228242, 6, 0, 2228245, 4, 0, 2228246, 5, 0, 2228247, 5, 0, 2228248, 5, 0, 2228249, 5, 0, 2228250, 6, 0, 2293760, 2, 0, 2293761, 2, 0, 2293762, 2, 0, 2293763, 2, 0, 2293764, 2, 0, 2293765, 2, 0, 2293766, 2, 0, 2293767, 2, 0, 2293768, 2, 0, 2293769, 2, 0, 2293770, 2, 0, 2293771, 3, 0, 2293775, 4, 0, 2293776, 5, 0, 2293777, 5, 0, 2293778, 6, 0, 2293781, 4, 0, 2293782, 5, 0, 2293783, 5, 0, 2293784, 5, 0, 2293785, 5, 0, 2293786, 6, 0, 2359296, 5, 0, 2359297, 5, 0, 2359298, 5, 0, 2359299, 5, 0, 2359300, 5, 0, 2359301, 5, 0, 2359302, 5, 0, 2359303, 5, 0, 2359304, 5, 0, 2359305, 5, 0, 2359306, 5, 0, 2359307, 6, 0, 2359311, 4, 0, 2359312, 5, 0, 2359313, 5, 0, 2359314, 6, 0, 2359317, 4, 0, 2359318, 5, 0, 2359319, 5, 0, 2359320, 5, 0, 2359321, 5, 0, 2359322, 6, 0, 2424832, 5, 0, 2424833, 5, 0, 2424834, 5, 0, 2424835, 5, 0, 2424836, 5, 0, 2424837, 5, 0, 2424838, 5, 0, 2424839, 5, 0, 2424840, 3, 0, 2424841, 3, 0, 2424842, 3, 0, 2424843, 3, 0, 2424847, 3, 0, 2424848, 3, 0, 2424849, 3, 0, 2424850, 3, 0, 2424853, 3, 0, 2424854, 3, 0, 2424855, 3, 0, 2424856, 3, 0, 2424857, 3, 0, 2424858, 3, 0, 2490368, 5, 0, 2490369, 5, 0, 2490370, 5, 0, 2490371, 5, 0, 2490372, 5, 0, 2490373, 5, 0, 2490374, 5, 0, 2490375, 5, 0, 2490376, 5, 0, 2490377, 5, 0, 2490378, 5, 0, 2490379, 6, 0, 2490383, 4, 0, 2490384, 5, 0, 2490385, 5, 0, 2490386, 6, 0, 2490389, 4, 0, 2490390, 5, 0, 2490391, 5, 0, 2490392, 5, 0, 2490393, 5, 0, 2490394, 6, 0, 2555904, 5, 0, 2555905, 5, 0, 2555906, 5, 0, 2555907, 5, 0, 2555908, 5, 0, 2555909, 5, 0, 2555910, 5, 0, 2555911, 5, 0, 2555912, 5, 0, 2555913, 5, 0, 2555914, 5, 0, 2555915, 6, 0, 2555919, 4, 0, 2555920, 5, 0, 2555921, 5, 0, 2555922, 6, 0, 2555925, 4, 0, 2555926, 5, 0, 2555927, 5, 0, 2555928, 5, 0, 2555929, 5, 0, 2555930, 6, 0, 2621440, 5, 0, 2621441, 5, 0, 2621442, 5, 0, 2621443, 5, 0, 2621444, 5, 0, 2621445, 5, 0, 2621446, 5, 0, 2621447, 5, 0, 2621448, 5, 0, 2621449, 5, 0, 2621450, 5, 0, 2621451, 6, 0, 2621455, 4, 0, 2621456, 5, 0, 2621457, 5, 0, 2621458, 6, 0, 2621461, 4, 0, 2621462, 5, 0, 2621463, 5, 0, 2621464, 5, 0, 2621465, 5, 0, 2621466, 6, 0 )
+
+[node name="Personagem" parent="Chão" instance=ExtResource( 1 )]
+position = Vector2( -113, 362 )
+
+[node name="Mureta" type="StaticBody2D" parent="."]
+position = Vector2( 1, 676 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mureta"]
+position = Vector2( 715.25, -19 )
+shape = SubResource( 2 )
