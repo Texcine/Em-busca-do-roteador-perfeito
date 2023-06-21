@@ -11,6 +11,10 @@ func _physics_process(delta):
 	if get_slide_count() > 0:
 		if get_slide_collision(0).collider.name == "Mureta":
 			get_tree().change_scene("res://Cardinali/Fase 1.tscn")
+		elif get_slide_collision(0).collider.name == "void":
+			get_tree().change_scene("res://Cardinali/Fase 1.tscn")
+		elif get_slide_collision(0).collider.name == "roteador":
+			get_tree().change_scene("res://Cardinali/Fase 1.tscn")
 	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = speed
